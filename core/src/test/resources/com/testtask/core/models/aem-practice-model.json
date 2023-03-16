@@ -1,0 +1,53 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:title": "Test Page",
+    "cq:template": "/conf/testtask/settings/wcm/templates/page-content",
+    "sling:resourceType": "testtask/components/page",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "testtask/components/container",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "layout": "responsiveGrid",
+        "sling:resourceType": "testtask/components/container",
+        "container": {
+          "jcr:primaryType": "nt:unstructured",
+          "layout": "responsiveGrid",
+          "sling:resourceType": "testtask/components/container",
+          "aempractice": {
+            "jcr:primaryType": "nt:unstructured",
+            "imagePath": "/content/dam/testtask/asset.jpg",
+            "title": "Title",
+            "sling:resourceType": "testtask/components/aempractice",
+            "backgroundImage": "true",
+            "navigationItems": {
+              "jcr:primaryType": "nt:unstructured",
+              "item0": {
+                "jcr:primaryType": "nt:unstructured",
+                "path": "/content/testtask/us",
+                "title": "Nav 1"
+              },
+              "item1": {
+                "jcr:primaryType": "nt:unstructured",
+                "path": "/content/testtask/us/en",
+                "title": "Nav 2"
+              },
+              "item2": {
+                "jcr:primaryType": "nt:unstructured",
+                "path": "/content/testtask/us/en/test-page",
+                "title": "Nav 3"
+              }
+            }
+          },
+          "aempractice-empty": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "testtask/components/aempractice"
+          }
+        }
+      }
+    }
+  }
+}
